@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Dr. Terri Williams",
+        "specialist": "Optometrist",
+        "img": "http://optrica.themetechmount.net/wp-content/uploads/2020/09/team05-450x500.jpg",
+        "visithour": "Mon-Fri: 10.00am-2.00pm"
+    },
+    {
+        "id": 2,
+        "name": "Dr. Bonnie Alberts",
+        "specialist": "Optician",
+        "img": "http://optrica.themetechmount.net/wp-content/uploads/2020/11/team-img04-450x500.jpg",
+        "visithour": "Mon-Fri: 2.00pm-12.00am"
+    },
+    {
+        "id": 3,
+        "name": "Dr. Steven Carter",
+        "specialist": "Clarivu eye",
+        "img": "http://optrica.themetechmount.net/wp-content/uploads/2020/11/team-img01-450x500.png",
+        "visithour": "Mon-Fri: 10.00am-2.00pm"
+    },
+    {
+        "id": 4,
+        "name": "Dr. John Batter",
+        "specialist": "Cataract surgery ",
+        "img": "http://optrica.themetechmount.net/wp-content/uploads/2020/11/team-img02-450x500.png",
+        "visithour": "Mon-Fri: 2.00pm-12.00am"
+    }
+]

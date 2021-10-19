@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "Dhanmondi",
+        "location": "78, Satmasjid Road (West of Road 27), Dhanmondi, Dhaka-1205",
+        "phone": "+88-012345789",
+        "img": "https://www.evercarebd.com/wp-content/uploads/2021/03/Front-CTG-1536x1229.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Uttara",
+        "location": "Plot # 31, Road # 14, Sector # 13, Uttara, Dhaka",
+        "phone": "+88-012345789",
+        "img": "https://www.evercarebd.com/wp-content/uploads/2021/03/Front-CTG-1536x1229.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Banani",
+        "location": "138, Niharika Concord Tower (11th to 14th Floor), Road # 4, Block # C, Banani, Dhaka-1213.",
+        "phone": "+88-012345789",
+        "img": "https://www.evercarebd.com/wp-content/uploads/2021/03/Front-CTG-1536x1229.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Zigatola",
+        "location": "21/3, Zigatola, Dhanmondi, Dhaka -1209 ",
+        "phone": "+88-012345789",
+        "img": "https://www.evercarebd.com/wp-content/uploads/2021/03/Front-CTG-1536x1229.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Mirpur",
+        "location": "Sumi Tower, 66 Zoo Road, Mirpur-2, Dhaka-1216",
+        "phone": "+88-012345789",
+        "img": "https://www.evercarebd.com/wp-content/uploads/2021/03/Front-CTG-1536x1229.jpg"
+    }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "The Vision Exams Equipment",
+        "description": "We are equipped with the latest technologies that help for the eye sight exams",
+        "img": "https://i.ibb.co/1vmBktq/1611-ai.png"
+    },
+    {
+        "id": 2,
+        "name": "The latest laser eye surgery",
+        "description": "This is a minimally invasive, bladeless form of keyhole laser eye surgery.",
+        "img": "https://i.ibb.co/1vmBktq/1611-ai.png"
+    },
+    {
+        "id": 3,
+        "name": "A Bionic Eye Sight Vision surgery",
+        "description": "A bionic eye could restore sight to the blind and greatly improve    ",
+        "img": "https://i.ibb.co/1vmBktq/1611-ai.png"
+    },
+    {
+        "id": 4,
+        "name": "The Laser Vision Correction",
+        "description": "Is the safest & most effective procedure that’s ever existed ophthalmology",
+        "img": "https://i.ibb.co/1vmBktq/1611-ai.png"
+    }
+]
