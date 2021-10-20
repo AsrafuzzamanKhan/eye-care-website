@@ -7,7 +7,7 @@ const Contact = () => {
                 <div className="row g-4 p-5">
                     <div className="col-lg-6">
                         <div className=" h-100">
-                            <h4>Have queries before the appointment?</h4>
+                            <h4 className="mb-4">Have queries before the appointment?</h4>
 
                             <div className="mb-5">
                                 <h3>Let's Talk</h3>
@@ -46,7 +46,7 @@ const Contact = () => {
 
                         <div className="form-floating">
                             <textarea className="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style={{ height: "100px" }}></textarea>
-                            <label for="floatingTextarea2">Comments</label>
+                            <label htmlFor="floatingTextarea2">Comments</label>
                         </div>
                         <button className="btn btn-success my-3">Submit</button>
                     </div>

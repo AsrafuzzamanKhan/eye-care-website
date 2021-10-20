@@ -8,7 +8,6 @@ import Branches from './components/Branches/Branches/Branches';
 import Contact from './components/Contact/Contact';
 import NotFound from './components/NotFound/NotFound';
 import Login from './components/Home/Login/Login/Login';
-
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import Booking from './components/Booking/Booking';

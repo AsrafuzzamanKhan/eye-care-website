@@ -1,5 +1,6 @@
-import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut, createUserWithEmailAndPassword, signInWithEmailAndPassword, sendEmailVerification } from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut, createUserWithEmailAndPassword, signInWithEmailAndPassword, sendEmailVerification, updateProfile } from "firebase/auth";
 import { useEffect, useState } from "react";
+
 import initializeAuthentication from "../components/Home/Login/Firebase/firebase.init";
 
 
@@ -8,8 +9,11 @@ initializeAuthentication();
 const googleProvider = new GoogleAuthProvider();
 const auth = getAuth();
 
+
 const useFirebase = () => {
+
     const [user, setUser] = useState({});
+    const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
@@ -17,13 +21,21 @@ const useFirebase = () => {
     const [isLoading, setIsLoading] = useState(true)
 
 
-    // register 
+
+    // google sign in 
+
+    const signInUsingGoogle = () => {
+        setIsLoading(true);
+        return signInWithPopup(auth, googleProvider);
+    }
+
+    // register with email and password
 
     const handleRegistration = e => {
         e.preventDefault();
 
         if (password.length < 6) {
-            setError(" Password must be 6 character long")
+            setError(" Password must be 6 characters long")
             return;
         }
 
@@ -31,19 +43,49 @@ const useFirebase = () => {
             setError('Password must have 2 upper characters')
             return;
         }
-        isLogin ? processLogin(email, password) : registerNewUser(email, password)
-
+        if (isLogin) {
+            processLogin(email, password);
+        }
+        else {
+            registerNewUser(email, password);
+        }
     }
-    const processLogin = (email, password) => {
+
+
+
+    const processLogin = () => {
         signInWithEmailAndPassword(auth, email, password)
             .then(result => {
+
                 const user = result.user;
                 console.log(user)
-                setError('')
+                setError('');
             })
             .catch(error => {
                 setError(error.message)
             })
+    }
+
+    const registerNewUser = (email, password) => {
+        console.log(email, password);
+        createUserWithEmailAndPassword(auth, email, password)
+            .then(result => {
+                setError('');
+                verifyEmail();
+                setUserName();
+                setUser(result.user)
+                console.log(result.user)
+                window.location.reload();
+            })
+            .catch(error => {
+                setError(error.message)
+            })
+    }
+
+
+    const setUserName = () => {
+        updateProfile(auth.currentUser, { displayName: name })
+            .then(result => { })
     }
 
     // verifyEmail
@@ -55,19 +97,11 @@ const useFirebase = () => {
             })
     }
 
-    const registerNewUser = (email, password) => {
-        createUserWithEmailAndPassword(auth, email, password)
-            .then(result => {
-                const user = result.user;
-                console.log(user)
-                setError('');
-                verifyEmail();
-            })
-            .catch(error => {
-                setError(error.message)
-            })
-    }
 
+    const handleNameChange = e => {
+        setName(e.target.value);
+
+    }
     const handleEmailChange = e => {
         setEmail(e.target.value)
     }
@@ -80,13 +114,7 @@ const useFirebase = () => {
     }
 
 
-    // google sign in 
 
-    const signInUsingGoogle = () => {
-        setIsLoading(true)
-
-        return signInWithPopup(auth, googleProvider)
-    }
 
     const logOut = () => {
         setIsLoading(true)
@@ -124,10 +152,14 @@ const useFirebase = () => {
         registerNewUser,
         processLogin,
         error,
+        setError,
         toggleLogin,
         isLogin,
         isLoading,
-        setIsLoading
+        setIsLoading,
+        handleNameChange,
+        setUserName
+
 
     }
 }

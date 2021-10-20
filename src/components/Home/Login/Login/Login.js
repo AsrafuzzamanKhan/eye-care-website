@@ -1,30 +1,23 @@
-import { useLocation, useHistory } from 'react-router-dom';
+import { useLocation, useHistory } from 'react-router';
 import useAuth from '../../../../hooks/useAuth';
 import img from '../../../../images/login/login.jpg'
 
 
 const Login = () => {
-    const { signInUsingGoogle, handlePasswordChange, error, toggleLogin, handleEmailChange, isLogin, handleRegistration, setLoading } = useAuth();
+    const { signInUsingGoogle, handleNameChange, handleEmailChange, handlePasswordChange, error, toggleLogin, isLogin, handleRegistration, setIsLoading, } = useAuth();
 
     const location = useLocation();
     const history = useHistory();
-
-    const redirect_uri = location.state?.from || '/home'
-
-
+    const redirect_uri = location.state?.from || '/home';
 
 
     const handleGoogleLogin = () => {
         signInUsingGoogle()
             .then((result) => {
                 history.push(redirect_uri)
-
             })
-            .finally(() => setLoading(false))
+            .finally(() => setIsLoading(false))
     }
-
-
-
 
     return (
         <div className="">
@@ -34,21 +27,31 @@ const Login = () => {
                         <img className="img-fluid p-3" src={img} alt="" />
                     </div>
                     <div className="col-lg-6 col-sm-12">
-                        <form onSubmit={handleRegistration} className="row">
-                            <div className="w-100 p-5 border shadow-lg ">
+                        <div onSubmit={handleRegistration} className="">
+
+                            <div className="w-100 p-3 border shadow-lg ">
                                 <h5 className="mb-4 text-center">Please {isLogin ? 'Login' : 'Register'}</h5>
+
+
+                                {!isLogin && <div className="row mb-3">
+                                    <div className="col-sm-10 w-100">
+                                        <input type="text" onBlur={handleNameChange} className="form-control" id="inputName" placeholder="Your Name" required />
+                                    </div>
+                                </div>}
+
                                 <div className="mb-3">
                                     <input onBlur={handleEmailChange} type="email" className="form-control" placeholder="Email" required />
                                 </div>
+
                                 <div className="mb-3">
                                     <input onBlur={handlePasswordChange} type="password" className="form-control" placeholder="Password" required />
                                 </div>
 
                                 <div className="mb-3">{error}</div>
 
-                                <div class="form-check">
-                                    <input onChange={toggleLogin} class="form-check-input" type="checkbox" id="gridCheck1" />
-                                    <label class="form-check-label" for="gridCheck1">
+                                <div className="form-check">
+                                    <input onChange={toggleLogin} className="form-check-input" type="checkbox" id="gridCheck1" />
+                                    <label className="form-check-label" htmlFor="gridCheck1">
                                         Already registered?
                                     </label>
                                 </div>
@@ -59,7 +62,7 @@ const Login = () => {
                                 <h6 className="text-center">or</h6>
                                 <button onClick={handleGoogleLogin} className="btn btn-primary w-100">Google Sign In</button>
                             </div>
-                        </form>
+                        </div>
 
                     </div>
                 </div>

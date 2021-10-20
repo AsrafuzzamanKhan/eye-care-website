@@ -11,7 +11,9 @@ const Branches = () => {
     }, [])
     return (
         <div>
-            <h2 className="heading p-4 mb-4 text-center">Our Branches</h2>
+            <div className="heading mb-5 p-4">
+                <h3 className="text-center">Our Branches</h3>
+            </div>
             <div className="container">
                 {
                     branches.map(branch => <Branch
