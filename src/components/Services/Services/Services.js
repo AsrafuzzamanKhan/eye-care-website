@@ -5,7 +5,7 @@ import './Services.css';
 const Services = () => {
   const [services, setServices] = useState([]);
   useEffect(() => {
-    fetch('services.json')
+    fetch('/service.json')
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
@@ -13,7 +13,7 @@ const Services = () => {
       });
   }, []);
   return (
-    <div className="">
+    <div>
       <div className="heading mb-5 p-4">
         <h3 className="text-center">Our Services</h3>
       </div>

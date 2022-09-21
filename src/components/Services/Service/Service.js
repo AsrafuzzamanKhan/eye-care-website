@@ -8,14 +8,13 @@ const Service = (props) => {
       <div>
         <div className="col">
           <div className="card border-0 shadow-lg card-container">
-            <img src={img} className="card-img-top" alt="..." />
+            <img src={img} className="card-img-top" alt="A img" />
             <div className="card-body">
               <h5 className="card-title">{name}</h5>
               <p className="card-text">{description}</p>
             </div>
             <div className="card-footer text-center border-0 bg-white">
               <Link to={`/servicedetails/${id}`}>
-                {' '}
                 <small className="text-muted ">
                   <button className="btn btn-success w-100">See More</button>
                 </small>

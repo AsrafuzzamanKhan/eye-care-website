@@ -8,11 +8,10 @@ const DetailService = () => {
 
   const [details, setDetails] = useState([]);
   useEffect(() => {
-    fetch('/services.json')
+    fetch('/service.json')
       .then((res) => res.json())
       .then((data) => {
         setDetails(data);
-        console.log(data);
       });
   }, []);
   const singleItem = details.filter((detail) => detail.id == id);

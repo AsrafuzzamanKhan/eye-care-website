@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Surgical Procedure",
+    "description": "The act of performing surgery may be called a surgical procedure, operation, or simply called a surgical procedure",
+    "overview": "You are nothing witout your set eyes care set injury magna consectr elit, do eiusmod tempor incididunt or ut labore areas disease eyecare dolore aliqua. Ut enim ad et minim veniam, and quis nostrud exercitation prouder You are nothing witout your set eyes care set injury magna consectr elit, do eiusmod tempor incididunt or ut labore areas disease eyecare dolore ",
+    "img": "https://i.ibb.co/q91vq1x/blog-detail-v1-1-370x290.jpg"
+  },
+  {
+    "id": 2,
+    "name": "All Laser Lasik",
+    "description": "LASIK eye surgery may mean no more corrective lenses. But it's not right for everybody.",
+    "overview": "You are nothing witout your set eyes care set injury magna consectr elit, do eiusmod tempor incididunt or ut labore areas disease eyecare dolore aliqua. Ut enim ad et minim veniam, and quis nostrud exercitation prouder You are nothing witout your set eyes care set injury magna consectr elit, do eiusmod tempor incididunt or ut labore areas disease eyecare dolore ",
+    "img": "https://i.ibb.co/gv1RPBG/services-details-2-370x290.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Cornea & Glaucoma",
+    "description": "The thinner the cornea the higher risk of developing glaucoma. The thinner corneas are also associated.",
+    "overview": "You are nothing witout your set eyes care set injury magna consectr elit, do eiusmod tempor incididunt or ut labore areas disease eyecare dolore aliqua. Ut enim ad et minim veniam, and quis nostrud exercitation prouder You are nothing witout your set eyes care set injury magna consectr elit, do eiusmod tempor incididunt or ut labore areas disease eyecare dolore ",
+    "img": "https://i.ibb.co/cFykb96/services-details-5-370x290.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Eye Surgery",
+    "description": "Eye surgery, also known as ocular surgery, is surgery performed on the eye or its adnexa, typically by an ophthalmologist.",
+    "overview": "You are nothing witout your set eyes care set injury magna consectr elit, do eiusmod tempor incididunt or ut labore areas disease eyecare dolore aliqua. Ut enim ad et minim veniam, and quis nostrud exercitation prouder You are nothing witout your set eyes care set injury magna consectr elit, do eiusmod tempor incididunt or ut labore areas disease eyecare dolore ",
+    "img": "https://i.ibb.co/NYDsGhq/service-v1-3.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Eye Test Care",
+    "description": "An eye exam involves a series of tests to evaluate your vision and check for eye diseases. ",
+    "overview": "You are nothing witout your set eyes care set injury magna consectr elit, do eiusmod tempor incididunt or ut labore areas disease eyecare dolore aliqua. Ut enim ad et minim veniam, and quis nostrud exercitation prouder You are nothing witout your set eyes care set injury magna consectr elit, do eiusmod tempor incididunt or ut labore areas disease eyecare dolore ",
+    "img": "https://i.ibb.co/7gDk7Ww/service-v1-1.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Contact Lenses",
+    "description": "A contact lens is a thin, curved lens placed on the film of tears that covers the surface of your eye. ",
+    "overview": "You are nothing witout your set eyes care set injury magna consectr elit, do eiusmod tempor incididunt or ut labore areas disease eyecare dolore aliqua. Ut enim ad et minim veniam, and quis nostrud exercitation prouder You are nothing witout your set eyes care set injury magna consectr elit, do eiusmod tempor incididunt or ut labore areas disease eyecare dolore ",
+    "img": "https://i.ibb.co/gv1RPBG/services-details-2-370x290.jpg"
+  }
+]
