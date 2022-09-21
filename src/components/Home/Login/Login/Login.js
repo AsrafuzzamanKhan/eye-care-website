@@ -4,7 +4,7 @@ import img from '../../../../images/login/login.jpg'
 
 
 const Login = () => {
-    const { signInUsingGoogle, handleNameChange, handleEmailChange, handlePasswordChange, error, toggleLogin, isLogin, handleRegistration, setIsLoading, } = useAuth();
+    const { signInUsingGoogle, handleNameChange, handleEmailChange, handlePasswordChange, error, toggleLogin, isLogin, handleRegistration, setIsLoading } = useAuth();
 
     const location = useLocation();
     const history = useHistory();

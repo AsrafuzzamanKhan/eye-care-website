@@ -1,0 +1,10 @@
+.serviceDetail-container {
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-bottom: 60px;
+}
+.serviceDetail-container img {
+  width: 100%;
+  border-radius: 10px;
+}
